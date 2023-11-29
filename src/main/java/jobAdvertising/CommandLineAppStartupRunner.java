@@ -30,4 +30,7 @@ public class CommandLineAppStartupRunner implements CommandLineRunner {
         emailService.sendEmail(sender, recipient, subject, body); // Use the emailService instance
     }
 
+
+
+
 }
