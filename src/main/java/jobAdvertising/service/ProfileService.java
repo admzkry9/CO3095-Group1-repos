@@ -18,14 +18,28 @@ public class ProfileService {
         profile.setContactNumber(scanner.nextInt());
 
         System.out.println("Do you want to upload an image? (Y/N)");
-        String uploadChoice = scanner.next();
+        String uploadImageChoice = scanner.next();
 
-        if (uploadChoice.equalsIgnoreCase("Y")) {
+        if (uploadImageChoice.equalsIgnoreCase("Y")) {
             System.out.println("Enter the image path:");
             profile.setImagePath(scanner.next());
         }
 
+        System.out.println("Do you want to upload a resume? (Y/N)");
+        String uploadResumeChoice = scanner.next();
+
+        if (uploadResumeChoice.equalsIgnoreCase("Y")) {
+            System.out.println("Enter the resume path:");
+            String resumePath = scanner.next();
+            byte[] resumeData = loadResumeData(resumePath);
+            profile.setResumeData(resumeData);
+        }
+
         return profile;
+    }
+
+    private byte[] loadResumeData(String resumePath) {
+        return null;
     }
 
     public void displayProfile(Profile profile) {
@@ -37,6 +51,12 @@ public class ProfileService {
             System.out.println("Image Path: " + profile.getImagePath());
         } else {
             System.out.println("No image data available.");
+        }
+
+        if (profile.getResumeData() != null && profile.getResumeData().length > 0) {
+            System.out.println("Resume Data: Resume data is present.");
+        } else {
+            System.out.println("No resume data available.");
         }
     }
 }

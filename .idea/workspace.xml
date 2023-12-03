@@ -5,26 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986a1007-05d0-4dba-a42a-68af9a455ca0" name="Changes" comment="Banu feedback page and schedule">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jobAdvertising/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jobAdvertising/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jobAdvertising/ProfilePageRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jobAdvertising/ProfilePageRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jobAdvertising/domain/Profile.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jobAdvertising/domain/Profile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jobAdvertising/service/ProfileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jobAdvertising/service/ProfileService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jobAdvertising/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jobAdvertising/domain/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jobAdvertising/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jobAdvertising/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jobAdvertising/ProfilePageRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jobAdvertising/ProfilePageRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jobAdvertising/domain/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jobAdvertising/domain/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jobAdvertising/service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jobAdvertising/service/ProfileService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +84,7 @@
       <workItem from="1701195549834" duration="1576000" />
       <workItem from="1701197763339" duration="74000" />
       <workItem from="1701356787224" duration="1238000" />
+      <workItem from="1701610119568" duration="1274000" />
     </task>
     <task id="LOCAL-00001" summary="Banu feedback page and schedule">
       <created>1701357432091</created>

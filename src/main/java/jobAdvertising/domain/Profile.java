@@ -8,6 +8,24 @@ public class Profile {
     private int contactNumber;
     private String imagePath;
 
+    private Rating rating;
+    private byte[] resumeData;
+
+    public byte[] getResumeData() {
+        return resumeData;
+    }
+
+    public void setResumeData(byte[] resumeData) {
+        this.resumeData = resumeData;
+    }
+    public Rating getRating() {
+        return rating;
+    }
+
+    public void setRating(Rating rating) {
+        this.rating = rating;
+    }
+
 
     public Long getId() {
         return id;

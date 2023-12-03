@@ -26,14 +26,14 @@ public class ProfilePageRunner implements CommandLineRunner {
 
         switch (choice) {
             case 1:
-                createAndDisplayProfile(scanner);
+                createAndDisplayProfile();
                 break;
             default:
                 System.out.println("Invalid choice");
         }
     }
 
-    private void createAndDisplayProfile(Scanner scanner) {
+    private void createAndDisplayProfile() {
         Profile profile = profileService.createProfile();
         profileService.displayProfile(profile);
     }
