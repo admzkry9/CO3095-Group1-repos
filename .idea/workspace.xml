@@ -4,9 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="986a1007-05d0-4dba-a42a-68af9a455ca0" name="Changes" comment="Kemal 2 more user stories">
+      <change afterPath="$PROJECT_DIR$/src/main/java/jobAdvertising/ApplicantFilteringRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jobAdvertising/ApplicantListingRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jobAdvertising/JobFilteringRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jobAdvertising/domain/Applicant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jobAdvertising/domain/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jobAdvertising/service/ApplicantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jobAdvertising/service/JobService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jobAdvertising/service/FeedbackService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jobAdvertising/service/ScheduleService.java" beforeDir="false" />
+=======
     <list default="true" id="986a1007-05d0-4dba-a42a-68af9a455ca0" name="Changes" comment="Banu feedback page and schedule">
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+>>>>>>> origin/master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +65,29 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/saide/Desktop/CO3095-Group1-reposs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e34ca56c56fcb3c3454385944bb56eaa&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RequestMappingsPanelOrder0": "0",
@@ -71,6 +109,7 @@
     "project.structure.side.proportion": "0.0",
     "spring.configuration.checksum": "e34ca56c56fcb3c3454385944bb56eaa",
     "vue.rearranger.settings.migration": "true"
+>>>>>>> origin/master
   }
 }]]></component>
   <component name="RunManager">
@@ -94,8 +133,18 @@
       <workItem from="1701195549834" duration="1576000" />
       <workItem from="1701197763339" duration="74000" />
       <workItem from="1701356787224" duration="1238000" />
+<<<<<<< HEAD
+      <workItem from="1701610119568" duration="3602000" />
+      <workItem from="1701650292597" duration="622000" />
+      <workItem from="1701817468680" duration="46000" />
+      <workItem from="1701817618425" duration="945000" />
+      <workItem from="1701820300088" duration="151000" />
+      <workItem from="1701820725149" duration="1150000" />
+      <workItem from="1701884612627" duration="1959000" />
+=======
       <workItem from="1701610119568" duration="1274000" />
       <workItem from="1701863219029" duration="204000" />
+>>>>>>> origin/master
     </task>
     <task id="LOCAL-00001" summary="Banu feedback page and schedule">
       <created>1701357432091</created>
@@ -111,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701357455924</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Kemal 2 more user stories">
+      <created>1701611414632</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701611414632</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +186,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Banu feedback page and schedule" />
-    <option name="LAST_COMMIT_MESSAGE" value="Banu feedback page and schedule" />
+    <MESSAGE value="Kemal 2 more user stories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kemal 2 more user stories" />
   </component>
 </project>

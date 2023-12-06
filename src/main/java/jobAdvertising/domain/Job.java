@@ -5,6 +5,16 @@ public class Job {
     private String description;
     private String location;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private String name;
+
     public String getTitle() {
         return title;
     }
