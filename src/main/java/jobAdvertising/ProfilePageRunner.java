@@ -2,12 +2,14 @@ package jobAdvertising;
 
 import jobAdvertising.service.ProfileService;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import jobAdvertising.domain.Profile;
 
 import java.util.Scanner;
 
 @Component
+@Order(2)
 public class ProfilePageRunner implements CommandLineRunner {
 
     private final ProfileService profileService;
