@@ -3,12 +3,9 @@ package jobAdvertising.service;
 import java.util.Scanner;
 import jobAdvertising.domain.Account;
 import org.springframework.stereotype.Service;
-
 @Service
 public class AccountService {
-
     public Account AccountCreate(){
-
         Scanner scanner = new Scanner(System.in);
         Account account = new Account();
         boolean ValidAns = false;

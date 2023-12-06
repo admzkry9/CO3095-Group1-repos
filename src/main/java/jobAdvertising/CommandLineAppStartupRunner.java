@@ -1,12 +1,14 @@
 package jobAdvertising;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import jobAdvertising.service.EmailService;
 
 import java.util.Scanner;
 
 @Component
+@Order(4)
 public class CommandLineAppStartupRunner implements CommandLineRunner {
 
     private final EmailService emailService;

@@ -3,11 +3,13 @@ package jobAdvertising;
 import jobAdvertising.domain.Rating;
 import jobAdvertising.service.RatingService;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
 
 @Component
+@Order(3)
 public class RatingRunner implements CommandLineRunner {
 
     private final RatingService ratingService;

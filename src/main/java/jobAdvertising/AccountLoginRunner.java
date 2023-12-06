@@ -1,10 +1,12 @@
 package jobAdvertising;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import jobAdvertising.service.AccountService;
 
 @Component
+@Order(1)
 public class AccountLoginRunner implements CommandLineRunner {
 
     private final AccountService accountService;
