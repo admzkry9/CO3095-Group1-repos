@@ -1,64 +1,90 @@
 package jobAdvertising.service;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 import jobAdvertising.domain.Account;
+import jobAdvertising.repository.AccountRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 @Service
 public class AccountService {
-    public Account AccountCreate(){
+
+    private final AccountRepo accountRepo;
+
+    @Autowired
+    public AccountService(AccountRepo accountRepo) {
+        this.accountRepo = accountRepo;
+    }
+
+    public Account AccountCreate() {
         Scanner scanner = new Scanner(System.in);
         Account account = new Account();
-        boolean ValidAns = false;
-        System.out.println("Create a Account");
-        System.out.println("Create a username : ");
+        boolean validAns = false;
+        System.out.println("Create an Account");
+        System.out.println("Create a username: ");
         account.setUsername(scanner.nextLine());
 
-        while(ValidAns == false){
-
+        while (!validAns) {
             System.out.println("Create a password");
-            String PassAns = scanner.nextLine();
-            if(PassAns.length() > 6){
-                account.setPassword(PassAns);
+            String passAns = scanner.nextLine();
+            if (passAns.length() > 6) {
+                account.setPassword(passAns);
                 break;
-            }
-            else if(PassAns.length() <= 6){
+            } else if (passAns.length() <= 6) {
                 System.out.println("Password is too short");
                 continue;
-            }
-            else{
+            } else {
                 System.out.println("Password Unavailable");
                 continue;
             }
         }
 
-        while(ValidAns == false){
-
-            System.out.println("Choose a Role : ");
+        while (!validAns) {
+            System.out.println("Choose a Role: ");
             System.out.println("applicant | employer");
-            String RoleAns = scanner.nextLine();
-            if(RoleAns.equals("applicant") || RoleAns.equals("employer")){
-                System.out.println("Role selected as " + RoleAns);
-                account.setRole(RoleAns);
+            String roleAns = scanner.nextLine();
+
+            if (roleAns.equals("applicant")) {
+                System.out.println("Role selected as " + roleAns);
+                account.setRole(roleAns);
                 break;
-            }else{
+            } else if (roleAns.equals("employer")) {
+                System.out.println("Role selected as " + roleAns);
+                account.setRole(roleAns);
+
+//                // For employers, ask if they want to provide skills
+//                System.out.println("Do you want to provide skills? (Y/N)");
+//                String provideSkillsAns = scanner.nextLine();
+//
+//                if (provideSkillsAns.equalsIgnoreCase("Y")) {
+//                    System.out.println("Enter skills (comma-separated):");
+//                    String skillsInput = scanner.nextLine();
+//                    List<String> skills = Arrays.asList(skillsInput.split("\\s*,\\s*"));
+//                    account.setSkills(skills);
+//                }
+//
+//                break;
+            } else {
                 System.out.println("Invalid Role, Please Try again");
                 continue;
             }
+
         }
-        System.out.println("account successfully created");
 
+        // Save account to the database
+        saveAccountToDatabase(account);
 
-
+        System.out.println("Account successfully created");
         return account;
     }
 
-    public Account AccountLogin(){
-
+    public Account AccountLogin() {
         Scanner scanner = new Scanner(System.in);
         Account account = new Account();
-        boolean ValidAns = false;
-        while(ValidAns == false) {
+        boolean validAns = false;
 
+        while (!validAns) {
             System.out.println("Login Page");
             System.out.println("Enter Username : ");
             account.setUsername(scanner.nextLine());
@@ -70,20 +96,26 @@ public class AccountService {
                 System.out.println("Welcome Admin");
                 System.out.println();
                 break;
-            } else{
+            } else {
                 System.out.println("Incorrect Username or Password");
                 System.out.println("Would you like to create an account instead? Y/N");
                 String craccountAns = scanner.nextLine();
-                if(craccountAns.equals("Y")){
-                    AccountCreate();
+                if (craccountAns.equals("Y")) {
+                    // Use the created account and save it to the database
+                    Account createdAccount = AccountCreate();
+                    saveAccountToDatabase(createdAccount);
                     break;
-                }else if(craccountAns.equals("N")) {
+                } else if (craccountAns.equals("N")) {
                     continue;
                 }
-
             }
         }
 
         return account;
+    }
+
+    public void saveAccountToDatabase(Account account) {
+        accountRepo.save(account);
+        System.out.println("Account successfully saved to the database.");
     }
 }

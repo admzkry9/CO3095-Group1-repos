@@ -1,14 +1,20 @@
 package jobAdvertising.domain;
 
+import javax.persistence.*;
 import java.util.Arrays;
 
+@Entity
 public class Profile {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private int contactNumber;
     private String imagePath;
 
-    private Rating rating;
+//    @OneToMany
+//    private Rating rating;
     private byte[] resumeData;
 
     public byte[] getResumeData() {
@@ -18,13 +24,13 @@ public class Profile {
     public void setResumeData(byte[] resumeData) {
         this.resumeData = resumeData;
     }
-    public Rating getRating() {
-        return rating;
-    }
-
-    public void setRating(Rating rating) {
-        this.rating = rating;
-    }
+//    public Rating getRating() {
+//        return rating;
+//    }
+//
+//    public void setRating(Rating rating) {
+//        this.rating = rating;
+//    }
 
 
     public Long getId() {

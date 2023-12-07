@@ -1,12 +1,22 @@
 package jobAdvertising.service;
 
 import jobAdvertising.domain.Profile;
+import jobAdvertising.repository.ProfileRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 @Service
 public class ProfileService {
+
+    private final ProfileRepo profileRepository;
+
+    @Autowired
+    public ProfileService(ProfileRepo profileRepository) {
+        this.profileRepository = profileRepository;
+    }
     public Profile createProfile() {
         Scanner scanner = new Scanner(System.in);
         Profile profile = new Profile();
@@ -14,9 +24,18 @@ public class ProfileService {
         System.out.println("Enter your name:");
         profile.setName(scanner.nextLine());
 
-        System.out.println("Enter your contact number:");
-        profile.setContactNumber(scanner.nextInt());
-
+        // Handle contact number input gracefully
+        boolean validContactNumber = false;
+        while (!validContactNumber) {
+            try {
+                System.out.println("Enter your contact number:");
+                profile.setContactNumber(scanner.nextInt());
+                validContactNumber = true;
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input for contact number. Please enter a valid number.");
+                scanner.nextLine(); // Consume the invalid input
+            }
+        }
         System.out.println("Do you want to upload an image? (Y/N)");
         String uploadImageChoice = scanner.next();
 
@@ -58,5 +77,9 @@ public class ProfileService {
         } else {
             System.out.println("No resume data available.");
         }
+    }
+    public void saveProfileToDatabase(Profile profile) {
+        profileRepository.save(profile);
+        System.out.println("Profile successfully saved to the database.");
     }
 }
