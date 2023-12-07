@@ -9,6 +9,7 @@ import jobAdvertising.domain.Profile;
 import java.util.Scanner;
 
 @Component
+@Order(1)
 public class ProfilePageRunner implements CommandLineRunner {
 
     private final ProfileService profileService;
@@ -21,21 +22,22 @@ public class ProfilePageRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Select an option:");
-        System.out.println("1. Create and Display Profile");
+        System.out.println("1. Create, Display, and Save Profile");
 
         int choice = scanner.nextInt();
 
         switch (choice) {
             case 1:
-                createAndDisplayProfile();
+                createDisplayAndSaveProfile();
                 break;
             default:
                 System.out.println("Invalid choice");
         }
     }
 
-    private void createAndDisplayProfile() {
+    private void createDisplayAndSaveProfile() {
         Profile profile = profileService.createProfile();
         profileService.displayProfile(profile);
+        profileService.saveProfileToDatabase(profile);
     }
 }

@@ -16,11 +16,7 @@ public class AccountLoginRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        accountService.AccountLogin();
+        accountService.saveAccountToDatabase(accountService.AccountLogin());
         System.out.println();
     }
-
-
-
-
 }
