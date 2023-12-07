@@ -9,7 +9,6 @@ import jobAdvertising.domain.Profile;
 import java.util.Scanner;
 
 @Component
-@Order(2)
 public class ProfilePageRunner implements CommandLineRunner {
 
     private final ProfileService profileService;

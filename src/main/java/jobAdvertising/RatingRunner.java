@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 import java.util.Scanner;
 
 @Component
-@Order(3)
 public class RatingRunner implements CommandLineRunner {
 
     private final RatingService ratingService;

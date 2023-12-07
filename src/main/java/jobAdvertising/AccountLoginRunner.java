@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 import jobAdvertising.service.AccountService;
 
 @Component
-@Order(1)
 public class AccountLoginRunner implements CommandLineRunner {
 
     private final AccountService accountService;

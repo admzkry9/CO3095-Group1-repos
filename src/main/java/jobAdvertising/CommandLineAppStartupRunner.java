@@ -8,7 +8,6 @@ import jobAdvertising.service.EmailService;
 import java.util.Scanner;
 
 @Component
-@Order(4)
 public class CommandLineAppStartupRunner implements CommandLineRunner {
 
     private final EmailService emailService;
