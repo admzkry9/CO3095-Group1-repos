@@ -86,4 +86,22 @@ public class AccountService {
 
         return account;
     }
+    public Account AccountCreate(String username, String password, String role) {
+        Account account = new Account();
+        account.setUsername(username);
+        account.setPassword(password);
+        account.setRole(role);
+        System.out.println("account successfully created");
+        return account;
+    }
+
+    public Account AccountLogin(String username, String password) {
+        Account account = new Account();
+        account.setUsername(username);
+        account.setPassword(password);
+
+        // Existing login logic...
+
+        return account;
+    }
 }
