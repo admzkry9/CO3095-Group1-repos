@@ -2,7 +2,6 @@ package jobAdvertising.service;
 
 import jobAdvertising.domain.Profile;
 import jobAdvertising.repository.ProfileRepo;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.InputMismatchException;
@@ -13,10 +12,11 @@ public class ProfileService {
 
     private final ProfileRepo profileRepository;
 
-    @Autowired
     public ProfileService(ProfileRepo profileRepository) {
         this.profileRepository = profileRepository;
     }
+
+
     public Profile createProfile() {
         Scanner scanner = new Scanner(System.in);
         Profile profile = new Profile();

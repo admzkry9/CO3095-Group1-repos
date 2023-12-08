@@ -1,6 +1,7 @@
 package jobAdvertising.tests;
 
 import jobAdvertising.domain.Profile;
+import jobAdvertising.repository.ProfileRepo;
 import jobAdvertising.service.ProfileService;
 import org.junit.Test;
 
@@ -19,7 +20,8 @@ public class ProfileServiceTest {
         InputStream inputStream = new ByteArrayInputStream(userInput.getBytes());
         System.setIn(inputStream);
 
-        ProfileService profileService = new ProfileService();
+        ProfileRepo profileRepository = null;
+        ProfileService profileService = new ProfileService(profileRepository);
         Profile profile = profileService.createProfile();
 
         System.setIn(System.in);
@@ -45,7 +47,8 @@ public class ProfileServiceTest {
         System.setOut(new PrintStream(outContent));
 
 
-        ProfileService profileService = new ProfileService();
+        ProfileRepo profileRepository = null;
+        ProfileService profileService = new ProfileService(profileRepository);
         profileService.displayProfile(profile);
         System.setOut(System.out);
         String expectedOutput = "Profile Details:\n" +

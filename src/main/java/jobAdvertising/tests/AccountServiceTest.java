@@ -18,11 +18,11 @@ public class AccountServiceTest {
         String testPassword = "testPassword";
         String testRole = "applicant";
 
+        // Call the AccountCreate method with test values
+        Account account = accountService.AccountCreate();
 
-        Account account = accountService.AccountCreate(testUsername, testPassword, testRole);
-
+        // Assert the expected values
         assertEquals(testUsername, account.getUsername());
         assertEquals(testPassword, account.getPassword());
-
     }
 }
