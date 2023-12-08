@@ -59,6 +59,11 @@ public class AccountService {
             if (roleAns.equals("applicant")) {
                 System.out.println("Role selected as " + roleAns);
                 account.setRole(roleAns);
+                // Ask for location for applicants
+                System.out.println("Enter your location: ");
+                String location = scanner.nextLine();
+                account.setLocation(location);
+
                 break;
             } else if (roleAns.equals("employer")) {
                 System.out.println("Role selected as " + roleAns);

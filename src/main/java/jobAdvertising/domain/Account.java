@@ -18,7 +18,25 @@ public class Account {
 
     private String role;
 
-//    private List<String> skills;
+    private String location;
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public void setAdmin_name(String admin_name) {
+        this.admin_name = admin_name;
+    }
+
+    public void setAdmin_pass(String admin_pass) {
+        this.admin_pass = admin_pass;
+    }
+
+    //    private List<String> skills;
 //
 //    public List<String> getSkills() {
 //        return skills;

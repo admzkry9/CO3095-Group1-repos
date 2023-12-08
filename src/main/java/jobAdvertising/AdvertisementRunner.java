@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class AdvertisementRunner implements CommandLineRunner {
     private final AdvertisementService advertisementService;
 
-
+    @Autowired
     public AdvertisementRunner(AdvertisementService advertisementService) {
         this.advertisementService = advertisementService;
     }
@@ -23,6 +23,9 @@ public class AdvertisementRunner implements CommandLineRunner {
         Scanner scanner = new Scanner(System.in);
 
         try {
+            System.out.println("Enter job title: ");
+            String jobTitle = scanner.nextLine();
+
             System.out.println("Enter path to image file: ");
             String imagePath = scanner.nextLine();
 
@@ -33,6 +36,7 @@ public class AdvertisementRunner implements CommandLineRunner {
             String contactDetails = scanner.nextLine();
 
             Advertisement advertisement = new Advertisement();
+            advertisement.setTitle(jobTitle); // Set the job title
             advertisement.setImagePath(imagePath);
             advertisement.setDetails(details);
             advertisement.setContactDetails(contactDetails);
