@@ -44,10 +44,10 @@ public class AccountService {
                 break;
             } else if (passAns.length() <= 6) {
                 System.out.println("Password is too short");
-                continue;
+
             } else {
                 System.out.println("Password Unavailable");
-                continue;
+
             }
         }
 
@@ -68,22 +68,9 @@ public class AccountService {
             } else if (roleAns.equals("employer")) {
                 System.out.println("Role selected as " + roleAns);
                 account.setRole(roleAns);
-
-//                // For employers, ask if they want to provide skills
-//                System.out.println("Do you want to provide skills? (Y/N)");
-//                String provideSkillsAns = scanner.nextLine();
-//
-//                if (provideSkillsAns.equalsIgnoreCase("Y")) {
-//                    System.out.println("Enter skills (comma-separated):");
-//                    String skillsInput = scanner.nextLine();
-//                    List<String> skills = Arrays.asList(skillsInput.split("\\s*,\\s*"));
-//                    account.setSkills(skills);
-//                }
-//
-//                break;
+                break;
             } else {
                 System.out.println("Invalid Role, Please Try again");
-                continue;
             }
 
         }
@@ -94,7 +81,7 @@ public class AccountService {
         System.out.println("Account successfully created");
         return account;
     }
-
+git a
     public Account AccountLogin() {
         Scanner scanner = new Scanner(System.in);
         Account account = new Account();
@@ -122,7 +109,9 @@ public class AccountService {
                     saveAccountToDatabase(createdAccount);
                     break;
                 } else if (craccountAns.equals("N")) {
-                    continue;
+                    System.out.println("Going back to login");
+                } else{
+                    System.out.println("Invalid answer");
                 }
             }
         }
