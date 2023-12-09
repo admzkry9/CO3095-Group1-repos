@@ -106,8 +106,8 @@ public class AccountService {
                 if (craccountAns.equals("Y")) {
                     // Use the created account and save it to the database
                     Account createdAccount = AccountCreate();
-                    saveAccountToDatabase(createdAccount);
-                    break;
+                    // account is returned
+                    
                 } else if (craccountAns.equals("N")) {
                     System.out.println("Going back to login");
                 } else{
